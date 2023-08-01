@@ -1,5 +1,3 @@
-# Django_Product_Management
-
 ### Description
 - This repository is made for learning the Django framework
 

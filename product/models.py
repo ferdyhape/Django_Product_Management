@@ -1,11 +1,20 @@
 from django.db import models
+from . import validators
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=255, unique=True)
-    description = models.TextField(blank=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    category = models.ForeignKey("category.Category", on_delete=models.CASCADE)
+    name = models.CharField(
+        max_length=255, unique=True, validators=[validators.validate_name]
+    )
+    description = models.TextField(validators=[validators.validate_description])
+    price = models.DecimalField(
+        max_digits=10, decimal_places=2, validators=[validators.validate_price]
+    )
+    category = models.ForeignKey(
+        "category.Category",
+        on_delete=models.CASCADE,
+        validators=[validators.validate_category],
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

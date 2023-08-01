@@ -1,4 +1,42 @@
-{% extends 'app.html' %}
-{% block content %}
-    <h1>Product Page</h1>
+{% extends 'app.html' %} {% block content %}
+
+<h4 class="my-4">List Of Products</h4>
+
+<a href="{% url 'create_product' %}" class="btn btn-primary btn-sm mb-3"
+  >+ New Product</a
+>
+
+<table class="table table-responsive table-striped">
+  <tr>
+    <th>No</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Action</th>
+  </tr>
+  {% for product in products %}
+  <tr>
+    <td>{{ forloop.counter }}</td>
+    <td>{{ product.name }}</td>
+    <td>{{ product.description }}</td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.category }}</td>
+    <td>
+      <a
+        href="{% url 'update_product' product.id %}"
+        class="btn btn-sm btn-info"
+        >Edit</a
+      >
+      <a
+        href="{% url 'delete_product' product.id %}"
+        class="btn btn-sm btn-danger"
+        >Delete</a
+      >
+    </td>
+  </tr>
+
+  {% endfor %}
+</table>
+
 {% endblock %}

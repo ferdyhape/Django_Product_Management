@@ -1,0 +1,25 @@
+{% extends 'app.html' %} {% block content %}
+
+{% if request.path == '/categories/create/' %}
+<h4 class="my-4">Create Category</h4>
+{% else %}
+<h4 class="my-4">Update Category</h4>
+{% endif %}
+
+<form method="post">
+    {% csrf_token %}
+    {% for field in category_form %}
+        <div class="mb-3">
+            <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+            {{field}}
+        </div>
+    {% endfor %}
+    {% if request.path == '/categories/create/' %}
+        <button type="submit" class="btn btn-primary">Create</button>
+    {% else %}
+    <button type="submit" class="btn btn-primary">Update</button>
+    {% endif %}
+</form>
+
+  {% endblock %}
+</table>

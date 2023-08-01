@@ -1,3 +1,26 @@
 {% extends 'app.html' %} {% block content %}
-<h1>Category Page</h1>
-{% endblock %}
+
+<h4 class="my-4">List Of Categories</h4>
+
+<a href="{% url 'create_category' %}" class="btn btn-primary btn-sm mb-3">+ New Category</a>
+
+<table class="table table-responsive table-striped">
+  <tr>
+    <th>No</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Action</th>
+  </tr>
+  {% for category in categories %}
+  <tr>
+    <td>{{ forloop.counter }}</td>
+    <td>{{ category.name }}</td>
+    <td>{{ category.description }}</td>
+    <td>
+      <a href="{% url 'update_category' category.id %}" class="btn btn-sm btn-warning">Edit</a>
+      <a href="{% url 'delete_category' category.id %}" class="btn btn-sm btn-danger">Delete</a>
+  </tr>
+  {% endfor %} 
+</table>
+  {% endblock %}
+</table>

@@ -21,7 +21,11 @@
     <td>{{ product.name }}</td>
     <td>{{ product.description }}</td>
     <td>{{ product.price }}</td>
-    <td>{{ product.category }}</td>
+    <td>
+      <a href="{% url 'product_by_category' product.category.name %}"
+        >{{ product.category.name }}</a
+      >
+    </td>
     <td>
       <a
         href="{% url 'update_product' product.id %}"

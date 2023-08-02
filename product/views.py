@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Product
 from . import forms
+from django.views import View
 from django.http import HttpResponseRedirect
 
 
@@ -58,3 +59,15 @@ def delete(request, product_id):
     product = Product.objects.get(id=product_id)
     product.delete()
     return HttpResponseRedirect("/products/")
+
+
+def product_by_category(request, category_name):
+    products = Product.objects.filter(category__name=category_name)
+    return render(
+        request,
+        "product/index.html",
+        {
+            "title": "Product Management",
+            "products": products,
+        },
+    )

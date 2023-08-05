@@ -1,5 +1,4 @@
 from django.urls import path
-from . import views_function_base
 from . import views_class_base
 from django.views.generic import TemplateView
 from .models import Category

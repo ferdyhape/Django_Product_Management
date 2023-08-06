@@ -19,7 +19,6 @@ urlpatterns = [
             template_name="static_html/home.html",
             extra_context={
                 "title": "Home",
-                "message": "Welcome to Product Management",
             },
         ),
         name="home",

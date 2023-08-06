@@ -1,6 +1,12 @@
-{% extends 'app.html' %} {% block content %}
+{% extends 'app.html' %} {% block content %} {% load static %}
+<div class="jumbotron rounded jumbotron-bg">
+  <h1 class="display-4">Product Management Web App</h1>
+  <p class="lead">
+    Efficiently manage your products with our user-friendly web application.
+  </p>
+  <div class="">
+    <a href="{% url 'login' %}" class="btn btn-primary">Get Started</a>
+  </div>
+</div>
 
-<h4 class="my-4">Home page</h4>
-
-<p>{{ message }}, {{request.user}}</p>
 {% endblock %}

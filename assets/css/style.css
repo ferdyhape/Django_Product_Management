@@ -1,0 +1,12 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+.jumbotron-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  color: black;
+}

@@ -23,7 +23,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a
             class="nav-link {% if request.path == '/' %} active{% endif %}"
@@ -38,6 +38,15 @@
             >About</a
           >
         </li>
+        {% if not user.is_authenticated %}
+        <li class="nav-item">
+          <a
+            class="nav-link {% if request.path == '/login/' %} active{% endif %}"
+            href="{% url 'login' %}"
+            >Login</a
+          >
+        </li>
+        {% else %}
         <li class="nav-item">
           <a
             class="nav-link {% if request.path == '/products/' %} active{% endif %}"
@@ -52,15 +61,6 @@
             >Categories</a
           >
         </li>
-        {% if not user.is_authenticated %}
-        <li class="nav-item">
-          <a
-            class="nav-link {% if request.path == '/login/' %} active{% endif %}"
-            href="{% url 'login' %}"
-            >Login</a
-          >
-        </li>
-        {% else %}
         <li class="nav-item">
           <a
             class="nav-link {% if request.path == '/logout/' %} active{% endif %}"

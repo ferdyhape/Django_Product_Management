@@ -63,11 +63,12 @@ def delete(request, product_id):
 
 def product_by_category(request, category_name):
     products = Product.objects.filter(category__name=category_name)
+    print(products)
     return render(
         request,
         "product/index.html",
         {
             "title": "Product Management",
-            "products": products,
+            "object_list": products,
         },
     )

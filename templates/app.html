@@ -1,14 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{title}}</title>
-    {% include "layouts/styles.html" %}
-  </head>
-  <body>
-    {% include "layouts/navbar.html" %}
-    <div class="container">{% block content %}{% endblock content %}</div>
-    {% include "layouts/scripts.html " %}
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}}</title>
+  {% include "layouts/styles.html" %}
+</head>
+
+<body>
+  {% include "layouts/navbar.html" %}
+  {% comment %} <div class="container">{% include "layouts/breadcrumb.html" %}</div> {% endcomment %}
+  <div class="container">
+    {% block content %}{% endblock content %}
+  </div>
+  {% include "layouts/scripts.html" %}
+</body>
+
 </html>

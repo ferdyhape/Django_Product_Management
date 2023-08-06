@@ -52,6 +52,23 @@
             >Categories</a
           >
         </li>
+        {% if not user.is_authenticated %}
+        <li class="nav-item">
+          <a
+            class="nav-link {% if request.path == '/login/' %} active{% endif %}"
+            href="{% url 'login' %}"
+            >Login</a
+          >
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a
+            class="nav-link {% if request.path == '/logout/' %} active{% endif %}"
+            href="{% url 'logout' %}"
+            >Logout</a
+          >
+        </li>
+        {% endif %}
       </ul>
     </div>
   </div>

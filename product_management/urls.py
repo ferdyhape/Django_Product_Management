@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView, RedirectView
+from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -33,6 +34,8 @@ urlpatterns = [
         ),
         name="about",
     ),
+    path("login/", views.LoginView.as_view(), name="login"),
+    path("logout/", views.LogoutView.as_view(), name="logout"),
     path("", include("product.urls")),
     path("", include("category.urls")),
 ]

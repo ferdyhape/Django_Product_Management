@@ -4,7 +4,6 @@ from django.views.generic import ListView
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
-    # path("products/", views.index, name="products"),
     path(
         "products/",
         login_required(

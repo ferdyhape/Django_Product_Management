@@ -19,3 +19,8 @@ def validate_price(value):
 def validate_category(value):
     if value == None:
         raise ValidationError("Category must be selected")
+
+
+def validate_image(value):
+    if value == None:
+        raise ValidationError("Image must be selected")

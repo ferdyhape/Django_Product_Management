@@ -15,6 +15,12 @@ class Product(models.Model):
         on_delete=models.CASCADE,
         validators=[validators.validate_category],
     )
+    image = models.ImageField(
+        upload_to="products",
+        validators=[validators.validate_image],
+        null=True,
+        blank=True,
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

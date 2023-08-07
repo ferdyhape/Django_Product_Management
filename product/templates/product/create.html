@@ -6,27 +6,27 @@
 <h4 class="my-4">Update Product</h4>
 {% endif %}
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {% for field in product_form %}
-        <div class="mb-3">
-            <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
-            {{field}}
-        </div>
-        {% if field.errors %}
-            <div class="alert alert-danger" role="alert">
-                {% for error in field.errors %}
-                    <strong>{{ error|escape }}</strong>
-                {% endfor %}
-            </div>
-        {% endif %}
+    <div class="mb-3">
+        <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+        {{field}}
+    </div>
+    {% if field.errors %}
+    <div class="alert alert-danger" role="alert">
+        {% for error in field.errors %}
+        <strong>{{ error|escape }}</strong>
+        {% endfor %}
+    </div>
+    {% endif %}
     {% endfor %}
     {% if request.path == '/products/create/' %}
-        <button type="submit" class="btn btn-primary">Create</button>
+    <button type="submit" class="btn btn-primary">Create</button>
     {% else %}
     <button type="submit" class="btn btn-primary">Update</button>
     {% endif %}
 </form>
 
-  {% endblock %}
+{% endblock %}
 </table>

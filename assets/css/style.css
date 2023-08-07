@@ -7,6 +7,67 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 80vh;
+  height: 70vh;
   color: black;
+}
+
+.height-10 {
+  height: 10vh;
+}
+.height-20 {
+  height: 20vh;
+}
+.height-30 {
+  height: 30vh;
+}
+.height-40 {
+  height: 40vh;
+}
+.height-50 {
+  height: 50vh;
+}
+.height-60 {
+  height: 60vh;
+}
+.height-70 {
+  height: 70vh;
+}
+.height-80 {
+  height: 80vh;
+}
+.height-90 {
+  height: 90vh;
+}
+.height-100 {
+  height: 100vh;
+}
+.height-110 {
+  height: 110vh;
+}
+.height-120 {
+  height: 120vh;
+}
+.height-130 {
+  height: 130vh;
+}
+.height-140 {
+  height: 140vh;
+}
+.height-150 {
+  height: 150vh;
+}
+.height-160 {
+  height: 160vh;
+}
+.height-170 {
+  height: 170vh;
+}
+.height-180 {
+  height: 180vh;
+}
+.height-190 {
+  height: 190vh;
+}
+.height-200 {
+  height: 200vh;
 }

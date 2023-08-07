@@ -12,9 +12,11 @@
 <body>
   {% include "layouts/navbar.html" %}
   {% comment %} <div class="container">{% include "layouts/breadcrumb.html" %}</div> {% endcomment %}
-  <div class="container">
+  <div class="container h-100 my-3">
     {% block content %}{% endblock content %}
   </div>
+  {% include "layouts/footer.html" %}
+
   {% include "layouts/scripts.html" %}
 </body>
 

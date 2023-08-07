@@ -1,8 +1,70 @@
 {% extends 'app.html' %} {% block content %}
 
-<h4 class="my-4">About page</h4>
+<div class="height-100 my-4">
+    <p class="h5">
+        This application was created to learn the Django Framework (4.2.3).
+    </p>
+    <p>
+        Some of the key insights gained from working on this project include:
+    </p>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Key</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Understanding how to create a Django project</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Learning how to create a Django app</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Setting up a MySQL database</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Creating models in Django</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>Creating and performing migrations in Django</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>Creating views using functions and classes (including generic views, template views, redirect
+                    views, and list views)</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>Building templates with template inheritance</td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td>Creating forms with form validation</td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td>Configuring URLs (including URL keyword arguments)</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>Setting up static and media files</td>
+            </tr>
+            <tr>
+                <th>11</th>
+                <td>Implementing authentication features (login, logout, register) and performing CRUD operations
+                    (including file uploads)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 
-
-<p>{{ message }}</p>
 {% endblock %}

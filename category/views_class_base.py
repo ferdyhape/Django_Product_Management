@@ -5,6 +5,18 @@ from . import forms
 from django.http import HttpResponseRedirect
 
 
+class IndexView(View):
+    template_name = "category/index.html"
+
+    def get(self, request, *args, **kwargs):
+        categories = Category.objects.all()
+        context = {
+            "title": "Category Management",
+            "categories": categories,
+        }
+        return render(request, self.template_name, context)
+
+
 class CreateOrUpdateOrDeleteView(View):
     template_name = "category/create.html"
     form_class = forms.CategoryForm

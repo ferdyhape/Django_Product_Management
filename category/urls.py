@@ -8,13 +8,7 @@ urlpatterns = [
     path(
         "categories/",
         login_required(
-            TemplateView.as_view(
-                template_name="category/index.html",
-                extra_context={
-                    "title": "Category Management",
-                    "categories": Category.objects.all(),
-                },
-            )
+            views_class_base.IndexView.as_view(),
         ),
         name="categories",
     ),

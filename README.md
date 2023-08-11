@@ -9,9 +9,16 @@
 5. [About Creator](#about-creator)
 
 ## Preview
-Full preview [in here](https://drive.google.com/file/d/1XsgTa_X6K6Zrz7-Dn18hbiat8Q4NuUPN/view?usp=sharing)
+<p align="center">
+  <img src="https://github.com/ferdyhape/Django_Product_Management/assets/75787853/c76c0e5f-9f7b-47f2-af86-378edd9b6a17" width="90%" height="90%">
+</p>
+
+full preview can be seen [here](https://drive.google.com/file/d/1XsgTa_X6K6Zrz7-Dn18hbiat8Q4NuUPN/view?usp=sharing)
+
+
 
 ## Description
+
 - This repository is made for learning the Django framework (4.2.3)
 
 ## Feature 
@@ -84,7 +91,8 @@ Full preview [in here](https://drive.google.com/file/d/1XsgTa_X6K6Zrz7-Dn18hbiat
 2. Pip (23.2.1)
 3. Django (4.2.3)
 4. mysqlclient (2.2.0)
-5. Pillow (10.0.0) 
+5. Bootstrap (5.2.3)
+6. Pillow (10.0.0) 
 
 ### About Creator
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.ferdyhape.site/)

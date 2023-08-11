@@ -13,7 +13,7 @@
   <img src="https://github.com/ferdyhape/Django_Product_Management/assets/75787853/c76c0e5f-9f7b-47f2-af86-378edd9b6a17" width="90%" height="90%">
 </p>
 
-full preview can be seen [here](https://drive.google.com/file/d/1XsgTa_X6K6Zrz7-Dn18hbiat8Q4NuUPN/view?usp=sharing)
+Full preview can be seen [here](https://drive.google.com/file/d/1XsgTa_X6K6Zrz7-Dn18hbiat8Q4NuUPN/view?usp=sharing)
 
 
 

@@ -8,6 +8,9 @@
 4. [Requirements](#requirements)
 5. [About Creator](#about-creator)
 
+## Preview
+Full preview [in here](https://drive.google.com/file/d/1XsgTa_X6K6Zrz7-Dn18hbiat8Q4NuUPN/view?usp=sharing)
+
 ## Description
 - This repository is made for learning the Django framework (4.2.3)
 

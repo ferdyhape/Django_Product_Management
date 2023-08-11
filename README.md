@@ -2,11 +2,12 @@
 
 ## Table of Contents
 
-1. [Description](#description)
-2. [Feature](#feature)
-3. [Key Learnings from this Project](#key-learnings-from-this-project)
-4. [Requirements](#requirements)
-5. [About Creator](#about-creator)
+1. [Preview](#preview)
+2. [Description](#description)
+3. [Feature](#feature)
+4. [Key Learnings from this Project](#key-learnings-from-this-project)
+5. [Requirements](#requirements)
+6. [About Creator](#about-creator)
 
 ## Preview
 <p align="center">
